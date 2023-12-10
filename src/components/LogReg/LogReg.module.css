@@ -1,0 +1,106 @@
+.Form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Form h1 {
+    left: 37%;
+    position: absolute;
+    color: var(--secondary);
+}
+
+.Cover {
+    width: 100%;
+    height: 100vh;
+    background: var(--white);
+    background-image: url('../../assets/cov.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.formContainer {
+    margin: 0 auto;
+}
+
+.formContainer form {
+    top: 30%;
+    position: relative;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    animation: top-bottom 1000ms;
+}
+
+@keyframes top-bottom {
+    0% {
+        top: -25%;
+    }
+    100% {
+        bottom: 30%;
+    }
+}
+
+.formContainer .sectionHeader {
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.formContainer .formWrap {
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.formContainer label {
+    display: block;
+    font-size: 14px;
+    color: var(--dark-grey);
+    margin-bottom: 14px;
+    font-weight: 450;
+}
+
+.formContainer input,
+.formContainer select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid var(--white);
+    font-size: 14px;
+    color: var(--dark-grey);
+    background: var(--light);
+    outline: none;
+}
+
+.formContainer input:focus {
+    border: 2px solid var(--grey2);
+}
+
+.formContainer .Button {
+    background-color: var(--secondary);
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    width: 14em;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+
+.alertMessage {
+    text-align: center;
+    color: var(--red);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 16px;
+}

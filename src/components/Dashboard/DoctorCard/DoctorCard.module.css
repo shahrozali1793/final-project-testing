@@ -1,0 +1,43 @@
+.Card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-grey);
+    background: var(--white);
+    padding: 5px;
+    border: 1px solid var(--light-grey);
+    border-radius: 10px;
+}
+
+.Card > .Photo img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--light-grey);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Card > .Name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Name .head {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Button {
+    display: flex;
+    align-items: center;
+}
+
+.Button button {
+    background: var(--light-green);
+    color: var(--dark-grey);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}

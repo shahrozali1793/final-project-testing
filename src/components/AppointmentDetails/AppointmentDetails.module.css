@@ -1,0 +1,60 @@
+.Container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: minmax(0, 30%) minmax(0, 70%);
+    gap: 20px;
+}
+
+.yes {
+    color: var(--green);
+}
+.no {
+    color: var(--red);
+}
+
+.detailsContainer {
+    width: 40%;
+    top: 25%;
+    left: 40%;
+    position: absolute;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    animation: top-bottom 1000ms;
+    line-height: 1.5;
+}
+
+@keyframes top-bottom {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 25%;
+    }
+}
+
+.detailsContainer .Title {
+    text-align: center;
+    color: var(--secondary);
+    letter-spacing: 1.2;
+}
+
+.detailsContainer p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailsContainer .Menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Menu button {
+    cursor: pointer;
+    background: var(--secondary);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}

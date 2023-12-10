@@ -1,0 +1,16 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--dark-grey);
+}
+.Container {
+    display: grid;
+    grid-template-columns: minmax(0, 15%) minmax(0, 85%);
+    gap: 10px;
+}
+
+.Content {
+    margin: 0;
+}

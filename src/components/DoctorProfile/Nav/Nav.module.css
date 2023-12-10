@@ -1,0 +1,78 @@
+.TransparentNav {
+    position: absolute;
+    z-index: 500;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--white);
+}
+.TransparentNav h4 {
+    display: inline-block;
+    padding-top: 0;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark);
+}
+.TransparentNav h4 > a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+.TransparentNav h4 span {
+    color: var(--secondary);
+}
+.TransparentNav ul {
+    margin-top: 15px;
+    list-style-type: none;
+    float: right;
+    padding-right: 10px;
+}
+.TransparentNav ul li {
+    float: left;
+    margin: 0 25px 0 25px;
+    padding: 10px;
+    transition: 200ms;
+}
+.TransparentNav ul li a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 200ms;
+    padding: 5px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+}
+.TransparentNav ul li a:hover {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+.TransparentNav ul li span {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .TransparentNav h4 {
+        font-size: 1.1em;
+        margin-top: 1.4em;
+    }
+
+    .TransparentNav ul {
+        padding-right: 2px;
+    }
+    .TransparentNav ul li {
+        margin: 10px 0 0 12px;
+    }
+    .TransparentNav ul li a {
+        font-size: 12px;
+    }
+    .TransparentNav ul li span {
+        font-size: 12px;
+    }
+}

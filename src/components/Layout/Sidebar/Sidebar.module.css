@@ -1,0 +1,118 @@
+.Bar {
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    animation: left-right 1000ms;
+    background: var(--secondary);
+    animation: left-right 1000ms;
+}
+
+@keyframes left-right {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.Bar > .profilecard {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.Content > .profileImg img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Content > .Intro {
+    padding: 7px;
+    border-bottom: 1px solid var(--white);
+}
+
+.Intro > .Name {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Intro > .Designation {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.profilecard > .socialLink {
+    padding: 5px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profilecard > .socialLink > .Icon {
+    color: var(--dark-grey);
+    font-weight: 600;
+    border-radius: 50%;
+}
+.profilecard > .socialLink > .Icon:hover {
+    transition: 600ms;
+    transform: rotateZ(360deg);
+    opacity: 0.8;
+}
+
+.Bar > .Menus {
+    margin: 50px 0 0 30px;
+    text-align: left;
+}
+
+.Bar ul > li {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 30px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.Bar ul > li:hover {
+    background: var(--light);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 20ms;
+}
+
+.Bar ul > li a:hover {
+    opacity: 0.8;
+}
+
+.Bar ul > li.active {
+    background: var(--light);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.Bar ul > li.active a {
+    opacity: 0.8;
+}
+
+.Bar > .Logout {
+    bottom: 10%;
+    left: 4%;
+    position: fixed;
+}
+
+.Logout button {
+    border: none;
+    background: var(--light);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button span {
+    margin-left: 5px;
+}

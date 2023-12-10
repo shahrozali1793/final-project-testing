@@ -1,0 +1,56 @@
+.tableContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.tableContainer h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--secondary);
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+    overflow: hidden;
+    border: 1px solid var(--light-grey);
+    border-radius: 10px;
+}
+
+th {
+    padding: 1em;
+    background: var(--secondary-accent);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--light-grey);
+}
+tr:nth-child(odd) {
+    background-color: var(--light-low);
+}
+
+.viewButton button {
+    padding: 5px;
+    background: var(--light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.yes {
+    color: var(--green);
+}
+
+.no {
+    color: var(--red);
+}
